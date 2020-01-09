@@ -103,3 +103,39 @@ function showcreate() {
     $('#clicktocreate').hide();
     $('#createnew').show();
 }
+
+
+var width = window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth;
+    var height = window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+    /*console.log(width);
+    console.log(height);*/
+    if (navigator.userAgent.indexOf("UCBrowser") !== -1) { /*$.toast("ðŸŽŠ Your UCBrowser is unsafe..");*/ }
+
+    function init() {
+        var imgDefer = document.getElementsByClassName('afterload');
+        for (var i = 0; i < imgDefer.length; i++) {
+            if (imgDefer[i].getAttribute('data-href')) {
+                imgDefer[i].setAttribute('href', imgDefer[i].getAttribute('data-href'));
+            }
+            if (imgDefer[i].getAttribute('data-src')) {
+                imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+            }
+            if (imgDefer[i].getAttribute('data-style')) {
+                imgDefer[i].setAttribute('style', imgDefer[i].getAttribute('data-style'));
+            }
+        }
+        var imgDefer = document.getElementsByClassName('featured__img');
+        for (var i = 0; i < imgDefer.length; i++) {
+            if (imgDefer[i].getAttribute('data-style')) {
+                imgDefer[i].setAttribute('style', imgDefer[i].getAttribute('data-style')); /*$('.featured__img img').attr('src',$('.featured__img img').attr('data-src'));*/ /*$('.featured__img img').removeAttr("data-src");*/ /*$('.featured__img').removeAttr("data-style");*/
+            }
+        } /* setTimeout(function() { */
+        if ($(".force__center__inn__btn").length) {
+            $('.force__center__inn__btn').append('<iframe defer name="f21bb3f24229374" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Festival Gif wishes with name" src="https://www.facebook.com/v2.11/plugins/like.php?app_id=113869198637480&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df390f78b6ba69e8%26domain%3Ddevelopers.facebook.com%26origin%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Ff3741e1b1934b94%26relation%3Dparent.parent&amp;container_width=678&amp;href=https%3A%2F%2Fwww.facebook.com%2Ffestival.wishes.fest.first%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;size=large" style="border: none;visibility: visible;width: 95px;height: 28px;margin-right: 20px;vertical-align: middle;" class="center animated animated_10s infinite pulse"></iframe>');
+        } /* $('.force__center__inn__btn').append(''); */ /* }, 2000); */
+    }
+    window.onload = init;
