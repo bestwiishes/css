@@ -90,3 +90,16 @@ var jqs = function(sParam) {
 
  }
  }, 1000);
+
+ function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function showcreate() {
+    $('#clicktocreate').hide();
+    $('#createnew').show();
+}
