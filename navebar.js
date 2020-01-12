@@ -26,9 +26,7 @@ var jqs = function(sParam) {
 
  }
  };
-
  checkName();
-
  var createGreeting=function(){
  sname=document.querySelector("#nameTextBox").value;
  sname=sname.replace(/@/g,"-")
@@ -38,7 +36,6 @@ var jqs = function(sParam) {
  document.querySelector("#enter__name").style.display = "none-sumit";
  document.querySelector(".whatshare").style.display = "block";
  document.querySelector("#wb-show-name").innerHTML = sname;
-
  document.querySelector("#wb-show-wishing").innerHTML = "";
  document.querySelector("#wb-fromMessage").innerHTML= "";
  window.scrollTo(0,0);
@@ -52,12 +49,8 @@ var jqs = function(sParam) {
  var shareString = "";
  var whatsappHref;
  shareString += "*"+sname+"*";
-
- 
-
+  shareString +="Send you Special Gift 🎁 %0AClick on blue Link 🙏%0A👇👇👇👇 %0A"
  shareString +=(window.location.href.split("?")[0] + "?wishyou=" + sname).replace("#", "").replace(/ /g, "-");
- 
-
  whatsappHref = "whatsapp://send?text=" + shareString;
  window.location.href = whatsappHref;
 
@@ -103,8 +96,6 @@ function showcreate() {
     $('#clicktocreate').hide();
     $('#createnew').show();
 }
-
-
 var width = window.innerWidth ||
         document.documentElement.clientWidth ||
         document.body.clientWidth;
