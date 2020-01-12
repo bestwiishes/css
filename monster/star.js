@@ -1,0 +1,3 @@
+/*! jQuery v2.1.4 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ jQuery(document).ready(function(e) {jQuery('body').wpSuperSnow({flakes: ['https://bestwiishes.github.io/css/img/star1.svg','https://bestwiishes.github.io/css/img/star2.svg', 'https://bestwiishes.github.io/css/img/star3.svg', 'https://bestwiishes.github.io/css/img/star4.svg','https://bestwiishes.github.io/css/img/star5.svg'],totalFlakes: '35',zIndex: '999999',maxSize: '77',maxDuration: '40',useFlakeTrans: true});});
+ 
+ 
