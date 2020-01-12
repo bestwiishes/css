@@ -49,7 +49,8 @@ var jqs = function(sParam) {
  var shareString = "";
  var whatsappHref;
  shareString += "*"+sname+"*";
-  shareString +="Send you Special Gift 🎁 %0AClick on blue Link 🙏%0A👇👇👇👇 %0A"
+ 
+ shareString +=" Send you Special Gift 🎁 %0AClick on blue Link 🙏%0A👇👇👇👇 %0A"
  shareString +=(window.location.href.split("?")[0] + "?wishyou=" + sname).replace("#", "").replace(/ /g, "-");
  whatsappHref = "whatsapp://send?text=" + shareString;
  window.location.href = whatsappHref;
